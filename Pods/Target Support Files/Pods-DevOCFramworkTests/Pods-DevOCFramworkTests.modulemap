@@ -1,0 +1,6 @@
+module Pods_DevOCFramworkTests {
+  umbrella header "Pods-DevOCFramworkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
