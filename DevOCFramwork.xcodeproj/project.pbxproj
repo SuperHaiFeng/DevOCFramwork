@@ -13,6 +13,7 @@
 		9E06CA9D211041F100702699 /* ZFLatgeTitleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E06CA9C211041F100702699 /* ZFLatgeTitleVC.m */; };
 		9E0ADB1221369B7400D0E025 /* ZFAttrTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0ADB1121369B7400D0E025 /* ZFAttrTextVC.m */; };
 		9E0ADB152136A3E100D0E025 /* UITextView+ZFAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0ADB142136A3E100D0E025 /* UITextView+ZFAddition.m */; };
+		9E80A03D21E4CC5B0083953B /* ZFTestSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */; };
 		9ECF3854213EB4200084082A /* ZFMergeImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF3853213EB4200084082A /* ZFMergeImageVC.m */; };
 		9ECF3858213F7A220084082A /* ZFQRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF3857213F7A220084082A /* ZFQRCodeManager.m */; };
 		A15ED5172021632C00722F10 /* ZFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15ED5162021632C00722F10 /* ZFMainViewController.m */; };
@@ -115,6 +116,8 @@
 		9E0ADB1121369B7400D0E025 /* ZFAttrTextVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFAttrTextVC.m; sourceTree = "<group>"; };
 		9E0ADB132136A3E100D0E025 /* UITextView+ZFAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZFAddition.h"; sourceTree = "<group>"; };
 		9E0ADB142136A3E100D0E025 /* UITextView+ZFAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZFAddition.m"; sourceTree = "<group>"; };
+		9E80A03B21E4CC5A0083953B /* DevOCFramwork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevOCFramwork-Bridging-Header.h"; sourceTree = "<group>"; };
+		9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFTestSwiftVC.swift; sourceTree = "<group>"; };
 		9ECF3852213EB4200084082A /* ZFMergeImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMergeImageVC.h; sourceTree = "<group>"; };
 		9ECF3853213EB4200084082A /* ZFMergeImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMergeImageVC.m; sourceTree = "<group>"; };
 		9ECF3856213F7A220084082A /* ZFQRCodeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFQRCodeManager.h; sourceTree = "<group>"; };
@@ -259,6 +262,15 @@
 				3DB573DABE9D181D902344E5 /* Pods-DevOCFramworkUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E80A03A21E4CC140083953B /* TestSwift */ = {
+			isa = PBXGroup;
+			children = (
+				9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */,
+				9E80A03B21E4CC5A0083953B /* DevOCFramwork-Bridging-Header.h */,
+			);
+			path = TestSwift;
 			sourceTree = "<group>";
 		};
 		9ECF3855213F7A090084082A /* QRCode */ = {
@@ -535,6 +547,7 @@
 		A1F741F42022A8E0004D6FEF /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				9E80A03A21E4CC140083953B /* TestSwift */,
 				A1F741F52022A8F1004D6FEF /* ZFDemoViewController.h */,
 				A1F741F62022A8F1004D6FEF /* ZFDemoViewController.m */,
 				9E06CA9B211041F100702699 /* ZFLatgeTitleVC.h */,
@@ -670,6 +683,7 @@
 				TargetAttributes = {
 					A16A004020215D0D00D329EF = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					A16A005820215D0D00D329EF = {
@@ -853,6 +867,7 @@
 				A1F7F545202D4E33007531BD /* ZFStatusedList_ViewModel.m in Sources */,
 				A1EB45B220468C2E008B10F6 /* ZFStatusPicture.m in Sources */,
 				A1EB459A20464051008B10F6 /* ZFWelcomView.m in Sources */,
+				9E80A03D21E4CC5B0083953B /* ZFTestSwiftVC.swift in Sources */,
 				A1EB459D20464064008B10F6 /* ZFNewFeatureView.m in Sources */,
 				A15ED5222021A0A900722F10 /* ZFBaseViewController.m in Sources */,
 				A1B73D3720454EA900468B59 /* ZFUserAccount.m in Sources */,
@@ -1030,16 +1045,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 245WE9LE4D;
 				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/zhangzhifang/DevOCFramwork的副本/DevOCFramwork/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/zhangzhifang/DevOCFramwork/DevOCFramwork/PrefixHeader.pch;
 				INFOPLIST_FILE = DevOCFramwork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = duobao.DevOCFramwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DevOCFramwork/Classes/View/Main/Test/TestSwift/DevOCFramwork-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1051,16 +1071,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 245WE9LE4D;
 				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/zhangzhifang/DevOCFramwork的副本/DevOCFramwork/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/zhangzhifang/DevOCFramwork/DevOCFramwork/PrefixHeader.pch;
 				INFOPLIST_FILE = DevOCFramwork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = duobao.DevOCFramwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DevOCFramwork/Classes/View/Main/Test/TestSwift/DevOCFramwork-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1069,6 +1093,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 026E7DB5EA6460A21E9CF75F /* Pods-DevOCFramworkTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevOCFramworkTests/Info.plist;
@@ -1084,6 +1109,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F9B8C055A6A52A89A9939C1 /* Pods-DevOCFramworkTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevOCFramworkTests/Info.plist;
@@ -1099,6 +1125,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A374CE4544C69B39B873D42C /* Pods-DevOCFramworkUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevOCFramworkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1113,6 +1140,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DB573DABE9D181D902344E5 /* Pods-DevOCFramworkUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevOCFramworkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

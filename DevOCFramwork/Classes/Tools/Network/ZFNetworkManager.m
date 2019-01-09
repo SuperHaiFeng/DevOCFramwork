@@ -45,6 +45,7 @@
 -(void) request: (NSInteger) method URLString: (NSString *) URLString parameters: (NSDictionary *) parameters completion:(void (^)(id json, BOOL isSuccess)) completion{
     if (method == GET) {
         [self GET:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            NSLog(@"==%@",responseObject);
             completion(responseObject, YES);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             ///针对403错误码（token过期）

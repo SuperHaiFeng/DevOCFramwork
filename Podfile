@@ -13,6 +13,7 @@ pod “FMDB”
 pod “SVProgressHUD”
 pod “pop”
 pod "RSA01",        '~> 0.0.1'
+pod "Masonry"
 
   target 'DevOCFramworkTests' do
     inherit! :search_paths

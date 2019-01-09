@@ -17,6 +17,7 @@
 #import "ZFLatgeTitleVC.h"
 #import "ZFAttrTextVC.h"
 #import "ZFMergeImageVC.h"
+#import "DevOCFramwork-Swift.h"
 
 ///原创id
 NSString *originalCellId = @"originalCellId";
@@ -97,7 +98,7 @@ NSString *retweetedCellId = @"retweetedCellId";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self setNavigationBarFromY:20];
+    [self setNavigationBarFromY:[UIApplication sharedApplication].statusBarFrame.size.height];
     ZFStatusViewModel *vm = self.listViewModel.statusList[indexPath.row];
 //    ZFStatus3DTouchViewController *presentVC = [[ZFStatus3DTouchViewController alloc] init];
 //    presentVC.vm = vm;
@@ -106,15 +107,18 @@ NSString *retweetedCellId = @"retweetedCellId";
 //    [self.navigationController pushViewController:largeTitle animated:YES];
 //    ZFAttrTextVC *att = [[ZFAttrTextVC alloc] init];
 //    [self.navigationController pushViewController:att animated:YES];
-    ZFMergeImageVC *merge = [[ZFMergeImageVC alloc] init];
-    [self.navigationController pushViewController:merge animated:YES];
+//    ZFMergeImageVC *merge = [[ZFMergeImageVC alloc] init];
+//    [self.navigationController pushViewController:merge animated:YES];
+    ZFTestSwiftVC *swift = [[ZFTestSwiftVC alloc] init];
+    [swift testWithTit:@"我是swift"];
+    [self.navigationController pushViewController:swift animated:YES];
 }
 
 #pragma mark - UIViewControllerPreviewingDelegate  监听3D Touch触发
 -(UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
     NSIndexPath *indexPath = [self.tableView indexPathForCell:(ZFStatusCell *)[previewingContext sourceView]];
     ZFStatusViewModel *vm = self.listViewModel.statusList[indexPath.row];
-    [self setNavigationBarFromY:20];
+    [self setNavigationBarFromY:[UIApplication sharedApplication].statusBarFrame.size.height];
     
     ///创建要预览的控制器
     ZFStatus3DTouchViewController *presentVC = [[ZFStatus3DTouchViewController alloc] init];
@@ -138,23 +142,23 @@ NSString *retweetedCellId = @"retweetedCellId";
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     endContentY = scrollView.contentOffset.y;
     if (endContentY - beginContentY > 80) {
-        if (self.navigationController.navigationBar.frame.origin.y == -44) {
+        if (self.navigationController.navigationBar.frame.origin.y == -self.navigationController.navigationBar.frame.size.height) {
             return;
         }
-        [self setNavigationBarFromY:-44];
+        [self setNavigationBarFromY:-self.navigationController.navigationBar.frame.size.height];
     }else if (endContentY - beginContentY < -80){
-        if (self.navigationController.navigationBar.frame.origin.y == 20) {
+        if (self.navigationController.navigationBar.frame.origin.y == [UIApplication sharedApplication].statusBarFrame.size.height) {
             return;
         }
-        [self setNavigationBarFromY:20];
+        [self setNavigationBarFromY:[UIApplication sharedApplication].statusBarFrame.size.height];
     }
     if (scrollView.contentOffset.y <= 60) {
-        [self setNavigationBarFromY:20];
+        [self setNavigationBarFromY:[UIApplication sharedApplication].statusBarFrame.size.height];
     }
 }
 
 -(void)scrollViewDidScrollToTop:(UIScrollView *)scrollView{
-    [self setNavigationBarFromY:20];
+    [self setNavigationBarFromY:[UIApplication sharedApplication].statusBarFrame.size.height];
 }
 
 -(void) setNavigationBarFromY: (CGFloat) y {
