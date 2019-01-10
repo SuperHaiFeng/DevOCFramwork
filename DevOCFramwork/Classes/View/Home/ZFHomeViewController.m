@@ -17,7 +17,6 @@
 #import "ZFLatgeTitleVC.h"
 #import "ZFAttrTextVC.h"
 #import "ZFMergeImageVC.h"
-#import "DevOCFramwork-Swift.h"
 
 ///原创id
 NSString *originalCellId = @"originalCellId";
@@ -111,6 +110,7 @@ NSString *retweetedCellId = @"retweetedCellId";
 //    [self.navigationController pushViewController:merge animated:YES];
     ZFTestSwiftVC *swift = [[ZFTestSwiftVC alloc] init];
     [swift testWithTit:@"我是swift"];
+    swift.statusVM = self.listViewModel;
     [self.navigationController pushViewController:swift animated:YES];
 }
 

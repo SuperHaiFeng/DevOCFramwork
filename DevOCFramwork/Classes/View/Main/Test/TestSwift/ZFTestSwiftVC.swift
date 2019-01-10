@@ -23,7 +23,6 @@ class ZFTestSwiftVC: UIViewController {
         super.viewDidLoad()
         self.title = self.tit
         self.view.backgroundColor = UIColor.white
-        print(self.user.userId)
         self.createView()
         self.loadData()
     }
@@ -31,9 +30,12 @@ class ZFTestSwiftVC: UIViewController {
     
     
     func loadData() {
-        self.statusVM.loadStatus(true) { (isSuccess, shouldRefresh) in
-            self.tableview.reloadData()
-        }
+//        self.statusVM.loadStatus(true) { (isSuccess, shouldRefresh) in
+//            if isSuccess {
+//               self.tableview.reloadData()
+//            }
+//        }
+        self.tableview.reloadData()
     }
 }
 
@@ -69,5 +71,12 @@ extension ZFTestSwiftVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let model: ZFStatusViewModel = self.statusVM.statusList![indexPath.row] as! ZFStatusViewModel
         return model.rowHeight
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let inheritVC: ZFInheritOC = ZFInheritOC()
+        inheritVC.tit = "我是继承OC的swift类"
+        self.navigationController?.pushViewController(inheritVC, animated: true)
     }
 }

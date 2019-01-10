@@ -14,6 +14,8 @@
 		9E0ADB1221369B7400D0E025 /* ZFAttrTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0ADB1121369B7400D0E025 /* ZFAttrTextVC.m */; };
 		9E0ADB152136A3E100D0E025 /* UITextView+ZFAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0ADB142136A3E100D0E025 /* UITextView+ZFAddition.m */; };
 		9E80A03D21E4CC5B0083953B /* ZFTestSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */; };
+		9E80A04121E6F2390083953B /* ZFInheritOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A04021E6F2390083953B /* ZFInheritOC.swift */; };
+		9E80A04321E6FDCF0083953B /* ZFInheritCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A04221E6FDCF0083953B /* ZFInheritCell.swift */; };
 		9ECF3854213EB4200084082A /* ZFMergeImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF3853213EB4200084082A /* ZFMergeImageVC.m */; };
 		9ECF3858213F7A220084082A /* ZFQRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF3857213F7A220084082A /* ZFQRCodeManager.m */; };
 		A15ED5172021632C00722F10 /* ZFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15ED5162021632C00722F10 /* ZFMainViewController.m */; };
@@ -118,6 +120,8 @@
 		9E0ADB142136A3E100D0E025 /* UITextView+ZFAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZFAddition.m"; sourceTree = "<group>"; };
 		9E80A03B21E4CC5A0083953B /* DevOCFramwork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevOCFramwork-Bridging-Header.h"; sourceTree = "<group>"; };
 		9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFTestSwiftVC.swift; sourceTree = "<group>"; };
+		9E80A04021E6F2390083953B /* ZFInheritOC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFInheritOC.swift; sourceTree = "<group>"; };
+		9E80A04221E6FDCF0083953B /* ZFInheritCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFInheritCell.swift; sourceTree = "<group>"; };
 		9ECF3852213EB4200084082A /* ZFMergeImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMergeImageVC.h; sourceTree = "<group>"; };
 		9ECF3853213EB4200084082A /* ZFMergeImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMergeImageVC.m; sourceTree = "<group>"; };
 		9ECF3856213F7A220084082A /* ZFQRCodeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFQRCodeManager.h; sourceTree = "<group>"; };
@@ -269,6 +273,8 @@
 			children = (
 				9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */,
 				9E80A03B21E4CC5A0083953B /* DevOCFramwork-Bridging-Header.h */,
+				9E80A04021E6F2390083953B /* ZFInheritOC.swift */,
+				9E80A04221E6FDCF0083953B /* ZFInheritCell.swift */,
 			);
 			path = TestSwift;
 			sourceTree = "<group>";
@@ -848,6 +854,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ECF3854213EB4200084082A /* ZFMergeImageVC.m in Sources */,
+				9E80A04121E6F2390083953B /* ZFInheritOC.swift in Sources */,
 				A1EB45A620465659008B10F6 /* UIImage+Extention.m in Sources */,
 				A1F7F547202D60A5007531BD /* ZFNetworkManager.m in Sources */,
 				A1F7F546202D6081007531BD /* ZFNetworkManager+Extension.m in Sources */,
@@ -873,6 +880,7 @@
 				A1B73D3720454EA900468B59 /* ZFUserAccount.m in Sources */,
 				A1EB45A020464BFC008B10F6 /* ZFNibLoadable.m in Sources */,
 				A1EB45AF20468B68008B10F6 /* ZFUser.m in Sources */,
+				9E80A04321E6FDCF0083953B /* ZFInheritCell.swift in Sources */,
 				A15ED5252021A30F00722F10 /* UIBarButtonItem+ZFBarButtonItem.m in Sources */,
 				A1F7F54B202D8BFB007531BD /* ZFOAuthViewController.m in Sources */,
 				A1EB45B520468F95008B10F6 /* ZFStatusViewModel.m in Sources */,
@@ -1052,6 +1060,18 @@
 				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/zhangzhifang/DevOCFramwork/DevOCFramwork/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/RSA01\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
 				INFOPLIST_FILE = DevOCFramwork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1078,6 +1098,18 @@
 				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/zhangzhifang/DevOCFramwork/DevOCFramwork/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/RSA01\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
 				INFOPLIST_FILE = DevOCFramwork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

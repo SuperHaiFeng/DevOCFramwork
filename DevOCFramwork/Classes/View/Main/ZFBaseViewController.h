@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class ZFRefreshControl;
+
 @interface ZFBaseViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic, strong) UITableView *tableView;
