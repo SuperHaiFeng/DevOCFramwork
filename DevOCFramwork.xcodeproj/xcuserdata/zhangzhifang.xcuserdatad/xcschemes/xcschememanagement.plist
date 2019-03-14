@@ -12,7 +12,7 @@
 		<key>DevOCFramwork.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>24</integer>
 		</dict>
 		<key>Widget.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>Widget.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>25</integer>
 		</dict>
 	</dict>
 </dict>

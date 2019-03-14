@@ -11,6 +11,7 @@
 		7171F6784AD2C931A1281C97 /* libPods-DevOCFramworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A8433D3EF4775C9CCA3FFD /* libPods-DevOCFramworkTests.a */; };
 		7B0EAE6454A92B1C49529F30 /* libPods-DevOCFramworkUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 446B9D8B1E9A05B463067961 /* libPods-DevOCFramworkUITests.a */; };
 		9E06CA9D211041F100702699 /* ZFLatgeTitleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E06CA9C211041F100702699 /* ZFLatgeTitleVC.m */; };
+		9E0873702227B79300789E4A /* ZFCoobjcTestOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E08736F2227B79300789E4A /* ZFCoobjcTestOC.m */; };
 		9E0ADB1221369B7400D0E025 /* ZFAttrTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0ADB1121369B7400D0E025 /* ZFAttrTextVC.m */; };
 		9E0ADB152136A3E100D0E025 /* UITextView+ZFAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0ADB142136A3E100D0E025 /* UITextView+ZFAddition.m */; };
 		9E80A03D21E4CC5B0083953B /* ZFTestSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */; };
@@ -114,6 +115,8 @@
 		59D85A06025F4931872317AF /* Pods-DevOCFramwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevOCFramwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevOCFramwork/Pods-DevOCFramwork.debug.xcconfig"; sourceTree = "<group>"; };
 		9E06CA9B211041F100702699 /* ZFLatgeTitleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFLatgeTitleVC.h; sourceTree = "<group>"; };
 		9E06CA9C211041F100702699 /* ZFLatgeTitleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFLatgeTitleVC.m; sourceTree = "<group>"; };
+		9E08736E2227B79300789E4A /* ZFCoobjcTestOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFCoobjcTestOC.h; sourceTree = "<group>"; };
+		9E08736F2227B79300789E4A /* ZFCoobjcTestOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFCoobjcTestOC.m; sourceTree = "<group>"; };
 		9E0ADB1021369B7400D0E025 /* ZFAttrTextVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFAttrTextVC.h; sourceTree = "<group>"; };
 		9E0ADB1121369B7400D0E025 /* ZFAttrTextVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFAttrTextVC.m; sourceTree = "<group>"; };
 		9E0ADB132136A3E100D0E025 /* UITextView+ZFAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZFAddition.h"; sourceTree = "<group>"; };
@@ -272,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */,
-				9E80A03B21E4CC5A0083953B /* DevOCFramwork-Bridging-Header.h */,
 				9E80A04021E6F2390083953B /* ZFInheritOC.swift */,
 				9E80A04221E6FDCF0083953B /* ZFInheritCell.swift */,
 			);
@@ -332,6 +334,7 @@
 				A16A004420215D0D00D329EF /* AppDelegate.h */,
 				A16A004520215D0D00D329EF /* AppDelegate.m */,
 				A1F7F53E202D48CD007531BD /* PrefixHeader.pch */,
+				9E80A03B21E4CC5A0083953B /* DevOCFramwork-Bridging-Header.h */,
 				A1F7F53D202D48B5007531BD /* Header.h */,
 				A16A004D20215D0D00D329EF /* Assets.xcassets */,
 				A16A005220215D0D00D329EF /* Info.plist */,
@@ -562,6 +565,8 @@
 				9E0ADB1121369B7400D0E025 /* ZFAttrTextVC.m */,
 				9ECF3852213EB4200084082A /* ZFMergeImageVC.h */,
 				9ECF3853213EB4200084082A /* ZFMergeImageVC.m */,
+				9E08736E2227B79300789E4A /* ZFCoobjcTestOC.h */,
+				9E08736F2227B79300789E4A /* ZFCoobjcTestOC.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -610,6 +615,7 @@
 				A16A003F20215D0D00D329EF /* Resources */,
 				5B86E93B67120E9D97770F18 /* [CP] Copy Pods Resources */,
 				A1D7D7B0204FC64300EBD9BD /* Embed App Extensions */,
+				6FD23556D5A678CB743A0584 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -799,15 +805,39 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DevOCFramwork/Pods-DevOCFramwork-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DevOCFramwork/Pods-DevOCFramwork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FD23556D5A678CB743A0584 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DevOCFramwork/Pods-DevOCFramwork-frameworks.sh",
+				"${PODS_ROOT}/DoraemonKit/iOS/DoraemonKit/Framework/DoraemonLoadAnalyze.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonLoadAnalyze.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DevOCFramwork/Pods-DevOCFramwork-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9A75E137DBA6E4B358D3E4DB /* [CP] Check Pods Manifest.lock */ = {
@@ -860,6 +890,7 @@
 				A1F7F546202D6081007531BD /* ZFNetworkManager+Extension.m in Sources */,
 				9E0ADB152136A3E100D0E025 /* UITextView+ZFAddition.m in Sources */,
 				A15ED5312021B6B100722F10 /* ZFProfileViewController.m in Sources */,
+				9E0873702227B79300789E4A /* ZFCoobjcTestOC.m in Sources */,
 				A1DD60F52047A64300652DBA /* ZFRefreshView.m in Sources */,
 				9ECF3858213F7A220084082A /* ZFQRCodeManager.m in Sources */,
 				9E06CA9D211041F100702699 /* ZFLatgeTitleVC.m in Sources */,
@@ -1077,7 +1108,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = duobao.DevOCFramwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DevOCFramwork/Classes/View/Main/Test/TestSwift/DevOCFramwork-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhangzhifang/DevOCFramwork/DevOCFramwork/DevOCFramwork-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1115,7 +1146,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = duobao.DevOCFramwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DevOCFramwork/Classes/View/Main/Test/TestSwift/DevOCFramwork-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhangzhifang/DevOCFramwork/DevOCFramwork/DevOCFramwork-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

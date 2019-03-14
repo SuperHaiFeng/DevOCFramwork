@@ -14,49 +14,102 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
+  - BSBacktraceLogger (0.0.1)
+  - coobjc (1.0.1):
+    - fishhook (~> 0.2.0)
+  - DoraemonKit/Core (1.1.5):
+    - AFNetworking
+    - BSBacktraceLogger
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - fishhook (0.2)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
   - Masonry (1.1.0)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
   - pop (1.0.10)
-  - RSA01 (0.0.1)
+  - RSA (0.0.2)
   - SDWebImage (4.3.0):
     - SDWebImage/Core (= 4.3.0)
   - SDWebImage/Core (4.3.0)
+  - SQLiteRepairKit (1.2.1):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
   - SVProgressHUD (2.2.2)
+  - SwipeView (0.0.1)
+  - UICountingLabel (1.2.0)
+  - "UITextView+Placeholder (1.2.1)"
+  - WCDB (1.0.7.5):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
+  - WindowManager (0.3.0)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
+  - coobjc
+  - DoraemonKit/Core (~> 1.1.5)
   - FMDB
   - Masonry
   - pop
-  - RSA01 (~> 0.0.1)
+  - RSA (~> 0.0.2)
   - SDWebImage
   - SVProgressHUD
+  - SwipeView (~> 0.0.1)
+  - WCDB
+  - WindowManager
   - YYModel
 
 SPEC REPOS:
+  http://git.zuinianqing.com/ios/CPSpecs.git:
+    - WindowManager
+  https://gitee.com/macod/repo.git:
+    - RSA
+    - SwipeView
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - BSBacktraceLogger
+    - coobjc
+    - DoraemonKit
+    - fishhook
     - FMDB
     - Masonry
+    - PNChart
     - pop
-    - RSA01
     - SDWebImage
+    - SQLiteRepairKit
     - SVProgressHUD
+    - UICountingLabel
+    - "UITextView+Placeholder"
+    - WCDB
+    - WCDBOptimizedSQLCipher
     - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
+  coobjc: 1954a85a5d83854810418114bf841fb60980b1b6
+  DoraemonKit: bab326669dfda1e4729b072a47c2ccaa26edf9a2
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
-  RSA01: 79277f720a34eba824b237a3d92862572105737c
+  RSA: bc912bd4721292b1bcffcf6946bcb55a4bebdbcf
   SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+  SQLiteRepairKit: 4d21bab9eff6a273f63da6815a0d1659e53f5bde
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  SwipeView: f21ac46e4a741f6dbb1d55ad7a30bdd7de8c538a
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+  WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
+  WindowManager: 38fe5bf4a22472a1a33f1a9ed3e8e91a4ae2e8ad
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 0012662bb419eba7bdd48b69e655a7d6b64d181b
+PODFILE CHECKSUM: 1da39e22549e6e687d6219d6321cdb330d6cdaf0
 
 COCOAPODS: 1.6.0.beta.2

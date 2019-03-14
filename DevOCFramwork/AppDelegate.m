@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZFMainViewController.h"
+#import <DoraemonKit/DoraemonManager.h>
 
 @interface AppDelegate ()
 
@@ -32,6 +33,10 @@
 //    [arrShortcutItems addObject:shoreItem1];
 //    UIApplicationShortcutItem *shoreItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"duobao.DevOCFramwork.openCompose" localizedTitle:@"新消息" localizedSubtitle:@"" icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeCompose] userInfo:nil];
 //    [arrShortcutItems addObject:shoreItem2];
+    
+#ifdef DEBUG
+    [[DoraemonManager shareInstance] install];
+#endif
     
     return YES;
 }
