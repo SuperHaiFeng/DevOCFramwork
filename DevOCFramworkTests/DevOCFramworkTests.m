@@ -17,6 +17,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    
 }
 
 - (void)tearDown {
@@ -35,6 +36,18 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+-(void) testDemo {
+    // 调用需要测试的方法，
+    int result = [self getNum];
+    // 如果不相等则会提示@“测试不通过”
+    XCTAssertEqual(result, 120,@"测试不通过");
+}
+
+- (int)getNum {
+    
+    return 100;
 }
 
 @end

@@ -75,8 +75,19 @@ extension ZFTestSwiftVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let inheritVC: ZFInheritOC = ZFInheritOC()
-        inheritVC.tit = "我是继承OC的swift类"
-        self.navigationController?.pushViewController(inheritVC, animated: true)
+        switch indexPath.row {
+        case 0:
+            let inheritVC: ZFInheritOC = ZFInheritOC()
+            inheritVC.tit = "我是继承OC的swift类"
+            self.navigationController?.pushViewController(inheritVC, animated: true)
+            break
+        case 1:
+            let monthStat = ZFMonthStatVC()
+            self.navigationController?.pushViewController(monthStat, animated: true)
+            break
+        default: break
+            
+        }
+        
     }
 }

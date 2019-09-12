@@ -14,6 +14,10 @@
 		9E0873702227B79300789E4A /* ZFCoobjcTestOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E08736F2227B79300789E4A /* ZFCoobjcTestOC.m */; };
 		9E0ADB1221369B7400D0E025 /* ZFAttrTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0ADB1121369B7400D0E025 /* ZFAttrTextVC.m */; };
 		9E0ADB152136A3E100D0E025 /* UITextView+ZFAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0ADB142136A3E100D0E025 /* UITextView+ZFAddition.m */; };
+		9E5C22CE224B54B10094D2AC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5C22CD224B54B00094D2AC /* libsqlite3.tbd */; };
+		9E5C22D0224B56D20094D2AC /* ZFMonthStatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C22CF224B56D20094D2AC /* ZFMonthStatVC.swift */; };
+		9E5C22D2224B63170094D2AC /* ZFMonthStatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C22D1224B63170094D2AC /* ZFMonthStatSection.swift */; };
+		9E5C22D4224B81B90094D2AC /* ZFMonthStatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C22D3224B81B90094D2AC /* ZFMonthStatCell.swift */; };
 		9E80A03D21E4CC5B0083953B /* ZFTestSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */; };
 		9E80A04121E6F2390083953B /* ZFInheritOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A04021E6F2390083953B /* ZFInheritOC.swift */; };
 		9E80A04321E6FDCF0083953B /* ZFInheritCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A04221E6FDCF0083953B /* ZFInheritCell.swift */; };
@@ -121,6 +125,10 @@
 		9E0ADB1121369B7400D0E025 /* ZFAttrTextVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFAttrTextVC.m; sourceTree = "<group>"; };
 		9E0ADB132136A3E100D0E025 /* UITextView+ZFAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZFAddition.h"; sourceTree = "<group>"; };
 		9E0ADB142136A3E100D0E025 /* UITextView+ZFAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZFAddition.m"; sourceTree = "<group>"; };
+		9E5C22CD224B54B00094D2AC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9E5C22CF224B56D20094D2AC /* ZFMonthStatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFMonthStatVC.swift; sourceTree = "<group>"; };
+		9E5C22D1224B63170094D2AC /* ZFMonthStatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFMonthStatSection.swift; sourceTree = "<group>"; };
+		9E5C22D3224B81B90094D2AC /* ZFMonthStatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFMonthStatCell.swift; sourceTree = "<group>"; };
 		9E80A03B21E4CC5A0083953B /* DevOCFramwork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevOCFramwork-Bridging-Header.h"; sourceTree = "<group>"; };
 		9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFTestSwiftVC.swift; sourceTree = "<group>"; };
 		9E80A04021E6F2390083953B /* ZFInheritOC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFInheritOC.swift; sourceTree = "<group>"; };
@@ -210,7 +218,6 @@
 		A1F741F82022F808004D6FEF /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		A1F7F53A202D4823007531BD /* ZFNetworkManager+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZFNetworkManager+Extension.h"; sourceTree = "<group>"; };
 		A1F7F53B202D4823007531BD /* ZFNetworkManager+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZFNetworkManager+Extension.m"; sourceTree = "<group>"; };
-		A1F7F53D202D48B5007531BD /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		A1F7F53E202D48CD007531BD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A1F7F540202D4C66007531BD /* ZFStatuses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFStatuses.h; sourceTree = "<group>"; };
 		A1F7F541202D4C66007531BD /* ZFStatuses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFStatuses.m; sourceTree = "<group>"; };
@@ -227,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5C22CE224B54B10094D2AC /* libsqlite3.tbd in Frameworks */,
 				3BDCA02140ADE61B6A7E47A1 /* libPods-DevOCFramwork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,12 +279,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9E5C22CA224B4F940094D2AC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C22D1224B63170094D2AC /* ZFMonthStatSection.swift */,
+				9E5C22D3224B81B90094D2AC /* ZFMonthStatCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		9E80A03A21E4CC140083953B /* TestSwift */ = {
 			isa = PBXGroup;
 			children = (
+				9E5C22CA224B4F940094D2AC /* view */,
 				9E80A03C21E4CC5B0083953B /* ZFTestSwiftVC.swift */,
 				9E80A04021E6F2390083953B /* ZFInheritOC.swift */,
 				9E80A04221E6FDCF0083953B /* ZFInheritCell.swift */,
+				9E5C22CF224B56D20094D2AC /* ZFMonthStatVC.swift */,
 			);
 			path = TestSwift;
 			sourceTree = "<group>";
@@ -335,7 +354,6 @@
 				A16A004520215D0D00D329EF /* AppDelegate.m */,
 				A1F7F53E202D48CD007531BD /* PrefixHeader.pch */,
 				9E80A03B21E4CC5A0083953B /* DevOCFramwork-Bridging-Header.h */,
-				A1F7F53D202D48B5007531BD /* Header.h */,
 				A16A004D20215D0D00D329EF /* Assets.xcassets */,
 				A16A005220215D0D00D329EF /* Info.plist */,
 				A16A005320215D0D00D329EF /* main.m */,
@@ -594,6 +612,7 @@
 		D1EBA701688BAFA2AB0AFD1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E5C22CD224B54B00094D2AC /* libsqlite3.tbd */,
 				ECAE856F96655990AD63DD81 /* libPods-DevOCFramwork.a */,
 				02A8433D3EF4775C9CCA3FFD /* libPods-DevOCFramworkTests.a */,
 				446B9D8B1E9A05B463067961 /* libPods-DevOCFramworkUITests.a */,
@@ -807,11 +826,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-DevOCFramwork/Pods-DevOCFramwork-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ZMImageTool/ZMImageTool.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZMImageTool.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -892,6 +913,7 @@
 				A15ED5312021B6B100722F10 /* ZFProfileViewController.m in Sources */,
 				9E0873702227B79300789E4A /* ZFCoobjcTestOC.m in Sources */,
 				A1DD60F52047A64300652DBA /* ZFRefreshView.m in Sources */,
+				9E5C22D4224B81B90094D2AC /* ZFMonthStatCell.swift in Sources */,
 				9ECF3858213F7A220084082A /* ZFQRCodeManager.m in Sources */,
 				9E06CA9D211041F100702699 /* ZFLatgeTitleVC.m in Sources */,
 				A1F7F542202D4C66007531BD /* ZFStatuses.m in Sources */,
@@ -913,6 +935,7 @@
 				A1EB45AF20468B68008B10F6 /* ZFUser.m in Sources */,
 				9E80A04321E6FDCF0083953B /* ZFInheritCell.swift in Sources */,
 				A15ED5252021A30F00722F10 /* UIBarButtonItem+ZFBarButtonItem.m in Sources */,
+				9E5C22D2224B63170094D2AC /* ZFMonthStatSection.swift in Sources */,
 				A1F7F54B202D8BFB007531BD /* ZFOAuthViewController.m in Sources */,
 				A1EB45B520468F95008B10F6 /* ZFStatusViewModel.m in Sources */,
 				A15ED51C20216A6F00722F10 /* NSBundle+ZFBundle.m in Sources */,
@@ -920,6 +943,7 @@
 				9E0ADB1221369B7400D0E025 /* ZFAttrTextVC.m in Sources */,
 				A1DD60FB2047FB6300652DBA /* ZFStatus3DTouchViewController.m in Sources */,
 				A1EB45A32046540F008B10F6 /* UIImageView+WebImage.m in Sources */,
+				9E5C22D0224B56D20094D2AC /* ZFMonthStatVC.swift in Sources */,
 				A1EB45B82046A775008B10F6 /* ZFStatusToolBar.m in Sources */,
 				A1EB45BB2046B100008B10F6 /* ZFStatusPictureView.m in Sources */,
 				A1DD60F82047A77B00652DBA /* ZFRefreshControl.m in Sources */,
@@ -1085,9 +1109,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 245WE9LE4D;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/zhangzhifang/DevOCFramwork/DevOCFramwork/PrefixHeader.pch;
@@ -1108,6 +1133,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = duobao.DevOCFramwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhangzhifang/DevOCFramwork/DevOCFramwork/DevOCFramwork-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -1123,9 +1149,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 245WE9LE4D;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/zhangzhifang/DevOCFramwork/DevOCFramwork/PrefixHeader.pch;
@@ -1146,6 +1173,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = duobao.DevOCFramwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhangzhifang/DevOCFramwork/DevOCFramwork/DevOCFramwork-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

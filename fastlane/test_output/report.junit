@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='DevOCFramworkTests.xctest' tests='3' failures='1'>
+  <testsuite name='DevOCFramworkTests' tests='3' failures='1'>
+    <testcase classname='DevOCFramworkTests' name='testDemo'>
+      <failure message='((result) equal to (120)) failed: (&quot;100&quot;) is not equal to (&quot;120&quot;) - 测试不通过'>DevOCFramworkTests/DevOCFramworkTests.m:45</failure>
+    </testcase>
+    <testcase classname='DevOCFramworkTests' name='testExample' time='0.001'/>
+    <testcase classname='DevOCFramworkTests' name='testPerformanceExample' time='0.328'/>
+  </testsuite>
+</testsuites>
